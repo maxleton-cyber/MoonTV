@@ -44,7 +44,7 @@ function DoubanPageClient() {
     if (type === 'movie') return '全部';
     if (type === 'tv') return 'tv';
     if (type === 'show') return 'show';
-    if (type === 'animation') return 'tv';
+    if (type === 'animation') return 'tv_animation';
     return '全部';
   });
 
@@ -111,7 +111,7 @@ function DoubanPageClient() {
       } else if (type === 'animation') {
         // 动漫类型对应到tv中的日本动画分类
         setPrimarySelection('');
-        setSecondarySelection('日本动画');
+        setSecondarySelection('tv_animation');
       } else {
         setPrimarySelection('');
         setSecondarySelection('全部');
@@ -136,8 +136,8 @@ function DoubanPageClient() {
       if (type === 'tv' || type === 'show' || type === 'animation') {
         return {
           kind: 'tv' as const,
-          category: type === 'animation' ? 'tv' : type, // animation类型使用tv分类
-          type: secondarySelection,
+          category: 'tv', // 统一使用tv分类
+          type: secondarySelection, // 使用当前选择的值，对于animation类型应该是'tv_animation'
           pageLimit: 25,
           pageStart,
         };

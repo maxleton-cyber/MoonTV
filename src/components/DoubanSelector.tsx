@@ -73,7 +73,10 @@ const DoubanSelector: React.FC<DoubanSelectorProps> = ({
     { label: '国内', value: 'show_domestic' },
     { label: '国外', value: 'show_foreign' },
   ];
-
+  // 综艺选择器选项
+  const animationOptions: SelectorOption[] = [
+    { label: '全部', value: 'tv_animation' },
+  ];
   // 更新指示器位置的通用函数
   const updateIndicatorPosition = (
     activeIndex: number,
@@ -113,7 +116,7 @@ const DoubanSelector: React.FC<DoubanSelectorProps> = ({
     if (type === 'movie') {
       const activeIndex = moviePrimaryOptions.findIndex(
         (opt) =>
-          opt.value === (primarySelection || moviePrimaryOptions[5].value)
+          opt.value === (primarySelection || moviePrimaryOptions[0].value)
       );
       updateIndicatorPosition(
         activeIndex,
@@ -130,9 +133,13 @@ const DoubanSelector: React.FC<DoubanSelectorProps> = ({
         (opt) =>
           opt.value === (secondarySelection || movieSecondaryOptions[0].value)
       );
-    } else if (type === 'tv' || type === 'animation') {
+    } else if (type === 'tv') {
       secondaryActiveIndex = tvOptions.findIndex(
         (opt) => opt.value === (secondarySelection || tvOptions[0].value)
+      );
+    } else if (type === 'animation') {
+      secondaryActiveIndex = tvOptions.findIndex(
+        (opt) => opt.value === (secondarySelection || animationOptions[0].value)
       );
     } else if (type === 'show') {
       secondaryActiveIndex = showOptions.findIndex(
@@ -176,7 +183,12 @@ const DoubanSelector: React.FC<DoubanSelectorProps> = ({
         (opt) => opt.value === secondarySelection
       );
       options = movieSecondaryOptions;
-    } else if (type === 'tv' || type === 'animation') {
+    } else if (type === 'tv') {
+      activeIndex = tvOptions.findIndex(
+        (opt) => opt.value === secondarySelection
+      );
+      options = tvOptions;
+    } else if (type === 'animation') {
       activeIndex = tvOptions.findIndex(
         (opt) => opt.value === secondarySelection
       );
@@ -332,8 +344,8 @@ const DoubanSelector: React.FC<DoubanSelectorProps> = ({
           </span>
           <div className='overflow-x-auto'>
             {renderCapsuleSelector(
-              tvOptions,
-              secondarySelection || '日本动画',
+              animationOptions,
+              secondarySelection || animationOptions[0].value,
               onSecondaryChange,
               false
             )}
