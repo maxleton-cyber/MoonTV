@@ -36,12 +36,15 @@ function DoubanPageClient() {
 
   // 选择器状态 - 完全独立，不依赖URL参数
   const [primarySelection, setPrimarySelection] = useState<string>(() => {
-    return type === 'movie' ? '热门' : '';
+    if (type === 'movie') return '热门';
+    if (type === 'animation') return '日本动画';
+    return '';
   });
   const [secondarySelection, setSecondarySelection] = useState<string>(() => {
     if (type === 'movie') return '全部';
     if (type === 'tv') return 'tv';
     if (type === 'show') return 'show';
+    if (type === 'animation') return 'tv';
     return '全部';
   });
 
@@ -129,11 +132,11 @@ function DoubanPageClient() {
   // 生成API请求参数的辅助函数
   const getRequestParams = useCallback(
     (pageStart: number) => {
-      // 当type为tv、show或animation时，kind统一为'tv'，category使用type本身
+      // 当type为tv、show或animation时，kind统一为'tv'
       if (type === 'tv' || type === 'show' || type === 'animation') {
         return {
           kind: 'tv' as const,
-          category: type,
+          category: type === 'animation' ? 'tv' : type, // animation类型使用tv分类
           type: secondarySelection,
           pageLimit: 25,
           pageStart,
@@ -399,7 +402,7 @@ function DoubanPageClient() {
           {type !== 'custom' ? (
             <div className='bg-white/60 dark:bg-gray-800/40 rounded-2xl p-4 sm:p-6 border border-gray-200/30 dark:border-gray-700/30 backdrop-blur-sm'>
               <DoubanSelector
-                type={type as 'movie' | 'tv' | 'show'}
+                type={type as 'movie' | 'tv' | 'show' | 'animation'}
                 primarySelection={primarySelection}
                 secondarySelection={secondarySelection}
                 onPrimaryChange={handlePrimaryChange}

@@ -10,7 +10,7 @@ interface SelectorOption {
 }
 
 interface DoubanSelectorProps {
-  type: 'movie' | 'tv' | 'show';
+  type: 'movie' | 'tv' | 'show' | 'animation';
   primarySelection?: string;
   secondarySelection?: string;
   onPrimaryChange: (value: string) => void;
@@ -113,7 +113,7 @@ const DoubanSelector: React.FC<DoubanSelectorProps> = ({
     if (type === 'movie') {
       const activeIndex = moviePrimaryOptions.findIndex(
         (opt) =>
-          opt.value === (primarySelection || moviePrimaryOptions[0].value)
+          opt.value === (primarySelection || moviePrimaryOptions[5].value)
       );
       updateIndicatorPosition(
         activeIndex,
@@ -130,7 +130,7 @@ const DoubanSelector: React.FC<DoubanSelectorProps> = ({
         (opt) =>
           opt.value === (secondarySelection || movieSecondaryOptions[0].value)
       );
-    } else if (type === 'tv') {
+    } else if (type === 'tv' || type === 'animation') {
       secondaryActiveIndex = tvOptions.findIndex(
         (opt) => opt.value === (secondarySelection || tvOptions[0].value)
       );
@@ -176,7 +176,7 @@ const DoubanSelector: React.FC<DoubanSelectorProps> = ({
         (opt) => opt.value === secondarySelection
       );
       options = movieSecondaryOptions;
-    } else if (type === 'tv') {
+    } else if (type === 'tv' || type === 'animation') {
       activeIndex = tvOptions.findIndex(
         (opt) => opt.value === secondarySelection
       );
@@ -317,6 +317,23 @@ const DoubanSelector: React.FC<DoubanSelectorProps> = ({
             {renderCapsuleSelector(
               showOptions,
               secondarySelection || showOptions[0].value,
+              onSecondaryChange,
+              false
+            )}
+          </div>
+        </div>
+      )}
+
+      {/* 动漫类型 - 使用tv类型的选择器 */}
+      {type === 'animation' && (
+        <div className='flex flex-col sm:flex-row sm:items-center gap-2'>
+          <span className='text-xs sm:text-sm font-medium text-gray-600 dark:text-gray-400 min-w-[48px]'>
+            类型
+          </span>
+          <div className='overflow-x-auto'>
+            {renderCapsuleSelector(
+              tvOptions,
+              secondarySelection || '日本动画',
               onSecondaryChange,
               false
             )}
