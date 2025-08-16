@@ -105,6 +105,10 @@ function DoubanPageClient() {
       } else if (type === 'show') {
         setPrimarySelection('');
         setSecondarySelection('show');
+      } else if (type === 'animation') {
+        // 动漫类型对应到tv中的日本动画分类
+        setPrimarySelection('');
+        setSecondarySelection('日本动画');
       } else {
         setPrimarySelection('');
         setSecondarySelection('全部');
@@ -125,8 +129,8 @@ function DoubanPageClient() {
   // 生成API请求参数的辅助函数
   const getRequestParams = useCallback(
     (pageStart: number) => {
-      // 当type为tv或show时，kind统一为'tv'，category使用type本身
-      if (type === 'tv' || type === 'show') {
+      // 当type为tv、show或animation时，kind统一为'tv'，category使用type本身
+      if (type === 'tv' || type === 'show' || type === 'animation') {
         return {
           kind: 'tv' as const,
           category: type,
@@ -362,6 +366,8 @@ function DoubanPageClient() {
       ? '电视剧'
       : type === 'show'
       ? '综艺'
+      : type === 'animation'
+      ? '动漫'
       : '自定义';
   };
 
