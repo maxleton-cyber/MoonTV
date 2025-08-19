@@ -84,6 +84,342 @@
     "xiaomaomi": {
       "api": "https://zy.xmm.hk/api.php/provide/vod",
       "name": "小猫咪资源"
+    },
+    "hongniuziyuan": {
+      "name": "紅牛資源",
+      "api": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/"
+    },
+    "liangziziyuan": {
+      "name": "量子資源",
+      "api": "https://cj.lziapi.com/api.php/provide/vod/from/lzm3u8/"
+    },
+    "wolongziyuan": {
+      "name": "卧龙资源",
+      "api": "https://collect.wolongzyw.com/api.php/provide/vod/"
+    },
+    "senlinziyuan": {
+      "name": "森林资源",
+      "api": "https://slapibf.com/api.php/provide/vod/"
+    },
+    "shandianziyuan": {
+      "name": "閃電資源",
+      "api": "https://sdzyapi.com/api.php/provide/vod/from/sdm3u8/"
+    },
+    "jinyingziyuan": {
+      "name": "金鹰资源",
+      "api": "https://jyzyapi.com/provide/vod/from/jinyingm3u8/"
+    },
+    "guangsuziyuan": {
+      "name": "光速资源",
+      "api": "https://api.guangsuapi.com/api.php/provide/vod/from/gsm3u8/"
+    },
+    "aosikaziyuanwang": {
+      "name": "奥斯卡资源网",
+      "api": "https://aosikazy.com/api.php/provide/vod/"
+    },
+    "ukuziyuan": {
+      "name": "U酷资源",
+      "api": "https://api.ukuapi.com/api.php/provide/vod/"
+    },
+    "yinghuaziyuanwang": {
+      "name": "樱花资源网",
+      "api": "https://m3u8.apiyhzy.com/api.php/provide/vod/"
+    },
+    "shandianziyuan2": {
+      "name": "闪电资源",
+      "api": "http://sdzyapi.com/api.php/provide/vod/"
+    },
+    "piaolingyingyuan": {
+      "name": "飘零影院",
+      "api": "https://p2100.net/api.php/provide/vod/"
+    },
+    "aikunziyuan": {
+      "name": "爱坤资源",
+      "api": "https://ikunzyapi.com/api.php/provide/vod/"
+    },
+    "senanguo": {
+      "name": "色南国",
+      "api": "https://api.sexnguon.com/api.php/provide/vod/"
+    },
+    "xinlangziyuan": {
+      "name": "新浪资源",
+      "api": "http://api.xinlangapi.com/xinlangapi.php/provide/vod/"
+    },
+    "ukuziyuan2": {
+      "name": "U酷资源",
+      "api": "https://api.ukuapi.com/api.php/provide/vod/"
+    },
+    "91md": {
+      "name": "91md",
+      "api": "https://91md.me/api.php/provide/vod/from/mdm3u8/"
+    },
+    "huyaziyuan": {
+      "name": "虎牙资源",
+      "api": "https://www.huyaapi.com/api.php/provide/vod/"
+    },
+    "suboziyuan": {
+      "name": "速博资源",
+      "api": "https://subocaiji.com/api.php/provide/vod/"
+    },
+    "xinlangziyuan2": {
+      "name": "新浪资源",
+      "api": "http://api.xinlangapi.com/xinlangapi.php/provide/vod/"
+    },
+    "shandianziyuan3": {
+      "name": "闪电资源",
+      "api": "http://sdzyapi.com/api.php/provide/vod/"
+    },
+    "ckziyuan": {
+      "name": "CK资源",
+      "api": "https://ckzy.me/api.php/provide/vod/"
+    },
+    "leboziyuan3": {
+      "name": "乐播资源",
+      "api": "https://lbapi9.com/api.php/provide/vod/at/json"
+    },
+    "senanguoziyuan": {
+      "name": "色南国资源",
+      "api": "https://api.sexnguon.com/api.php/provide/vod/"
+    },
+    "aivin": {
+      "name": "AIvin",
+      "api": "http://lbapiby.com/api.php/provide/vod/at/json"
+    },
+    "91madou": {
+      "name": "91麻豆",
+      "api": "https://91md.me/api.php/provide/vod/"
+    },
+    "meishaonvziyuan": {
+      "name": "美少女资源",
+      "api": "https://www.msnii.com/api/json.php"
+    },
+    "yinshuijiziyuan": {
+      "name": "淫水机资源",
+      "api": "https://www.xrbsp.com/api/json.php"
+    },
+    "xiangnaierziyuan": {
+      "name": "香奶儿资源",
+      "api": "https://www.gdlsp.com/api/json.php"
+    },
+    "baipiaoziyuan": {
+      "name": "白嫖资源",
+      "api": "https://www.kxgav.com/api/json.php"
+    },
+    "huangavziyuan": {
+      "name": "黄AV资源",
+      "api": "https://www.pgxdy.com/api/json.php"
+    },
+    "fanhaoziyuan": {
+      "name": "番号资源",
+      "api": "http://fhapi9.com/api.php/provide/vod/"
+    },
+    "shayuziyuan": {
+      "name": "鲨鱼资源",
+      "api": "https://shayuapi.com/api.php/provide/vod/"
+    },
+    "ckziyuan3": {
+      "name": "CK资源",
+      "api": "https://ckzy.me/api.php/provide/vod/"
+    },
+    "leboziyuan4": {
+      "name": "乐播资源",
+      "api": "https://lbapi9.com/api.php/provide/vod/at/json"
+    },
+    "senanguoziyuan2": {
+      "name": "色南国资源",
+      "api": "https://api.sexnguon.com/api.php/provide/vod/"
+    },
+    "aivin2": {
+      "name": "AIvin",
+      "api": "http://lbapiby.com/api.php/provide/vod/at/json"
+    },
+    "91madou2": {
+      "name": "91麻豆",
+      "api": "https://91md.me/api.php/provide/vod/"
+    },
+    "meishaonvziyuan2": {
+      "name": "美少女资源",
+      "api": "https://www.msnii.com/api/json.php"
+    },
+    "yinshuijiziyuan2": {
+      "name": "淫水机资源",
+      "api": "https://www.xrbsp.com/api/json.php"
+    },
+    "xiangnaierziyuan2": {
+      "name": "香奶儿资源",
+      "api": "https://www.gdlsp.com/api/json.php"
+    },
+    "baipiaoziyuan2": {
+      "name": "白嫖资源",
+      "api": "https://www.kxgav.com/api/json.php"
+    },
+    "huangavziyuan2": {
+      "name": "黄AV资源",
+      "api": "https://www.pgxdy.com/api/json.php"
+    },
+    "fanhaoziyuan2": {
+      "name": "番号资源",
+      "api": "http://fhapi9.com/api.php/provide/vod/"
+    },
+    "shayuziyuan2": {
+      "name": "鲨鱼资源",
+      "api": "https://shayuapi.com/api.php/provide/vod/"
+    },
+    "1080ziyuanku": {
+      "name": "1080资源库",
+      "api": "https://api.1080zyku.com/inc/api_mac10.php"
+    },
+    "liangziziyuan2": {
+      "name": "量子资源",
+      "api": "http://cj.lziapi.com/api.php/provide/vod/"
+    },
+    "wolongziyuan2": {
+      "name": "卧龙资源",
+      "api": "https://collect.wolongzyw.com/api.php/provide/vod/"
+    },
+    "hongniuziyuan2": {
+      "name": "红牛资源",
+      "api": "https://www.hongniuzy2.com/api.php/provide/vod/"
+    },
+    "yinghuaziyuan": {
+      "name": "樱花资源",
+      "api": "https://m3u8.apiyhzy.com/api.php/provide/vod/"
+    },
+    "shandianziyuan4": {
+      "name": "闪电资源",
+      "api": "http://sdzyapi.com/api.php/provide/vod/"
+    },
+    "guangsuziyuan2": {
+      "name": "光速资源",
+      "api": "https://api.guangsuapi.com/api.php/provide/vod/"
+    },
+    "xinlangziyuan3": {
+      "name": "新浪资源",
+      "api": "http://api.xinlangapi.com/xinlangapi.php/provide/vod/"
+    },
+    "wujinziyuan": {
+      "name": "无尽资源",
+      "api": "https://api.wujinapi.net/api.php/provide/vod/"
+    },
+    "ukuziyuan3": {
+      "name": "U酷资源",
+      "api": "https://api.ukuapi.com/api.php/provide/vod/"
+    },
+    "liangziyun": {
+      "name": "量子云",
+      "api": "https://cj.lziapi.com/api.php/provide/vod/"
+    },
+    "ikunyun": {
+      "name": "ikun云",
+      "api": "https://ikunzyapi.com/api.php/provide/vod/from/ikm3u8/at/json/"
+    },
+    "guangsuyun": {
+      "name": "光速云",
+      "api": "https://api.guangsuapi.com/api.php/provide/vod/from/gsm3u8/"
+    },
+    "shenmayun": {
+      "name": "神马云",
+      "api": "https://api.1080zyku.com/inc/apijson.php/"
+    },
+    "hongniuyun": {
+      "name": "红牛云",
+      "api": "https://www.hongniuzy2.com/api.php/provide/vod/from/hnm3u8/"
+    },
+    "liangziziyuan3": {
+      "name": "量子资源",
+      "api": "http://cj.lziapi.com/api.php/provide/vod/"
+    },
+    "yinghuaziyuan2": {
+      "name": "樱花资源",
+      "api": "https://m3u8.apiyhzy.com/api.php/provide/vod/"
+    },
+    "shandianziyuan5": {
+      "name": "闪电资源",
+      "api": "http://sdzyapi.com/api.php/provide/vod/"
+    },
+    "guangsuziyuan3": {
+      "name": "光速资源",
+      "api": "https://api.guangsuapi.com/api.php/provide/vod/"
+    },
+    "xinlangziyuan4": {
+      "name": "新浪资源",
+      "api": "http://api.xinlangapi.com/xinlangapi.php/provide/vod/"
+    },
+    "1080zyku1080ziyuanku": {
+      "name": "1080zyku1080资源库",
+      "api": "https://api.1080zyku.com/inc/api_mac10.php"
+    },
+    "apiyhzyyinghuaziyuanqie": {
+      "name": "apiyhzy樱花资源(切)",
+      "api": "https://m3u8.apiyhzy.com/api.php/provide/vod/"
+    },
+    "guangsuapiguangsuziyuan": {
+      "name": "guangsuapi光速资源",
+      "api": "https://api.guangsuapi.com/api.php/provide/vod/"
+    },
+    "hongniuzy2hongniuziyuanqie": {
+      "name": "hongniuzy2红牛资源(切)",
+      "api": "https://www.hongniuzy2.com/api.php/provide/vod/"
+    },
+    "jinyingzyjinying": {
+      "name": "jinyingzy金鹰",
+      "api": "http://jinyingzy.com/provide/vod/"
+    },
+    "lziapiliangziziyuan": {
+      "name": "lziapi量子资源",
+      "api": "http://cj.lziapi.com/api.php/provide/vod/"
+    },
+    "sdzyapishandianziyuanqie": {
+      "name": "sdzyapi闪电资源(切)",
+      "api": "http://sdzyapi.com/api.php/provide/vod/"
+    },
+    "ukuapiukuziyuan": {
+      "name": "ukuapiU酷资源",
+      "api": "https://api.ukuapi.com/api.php/provide/vod/"
+    },
+    "wolongzywwolongziyuanqie": {
+      "name": "wolongzyw卧龙资源(切)",
+      "api": "https://collect.wolongzyw.com/api.php/provide/vod/"
+    },
+    "wujinapiwujin": {
+      "name": "wujinapi无尽",
+      "api": "https://api.wujinapi.cc/api.php/provide/vod/"
+    },
+    "wujinapiwujinziyuan": {
+      "name": "wujinapi无尽资源",
+      "api": "https://api.wujinapi.com/api.php/provide/vod/"
+    },
+    "xinlangapixinlangziyuanqie": {
+      "name": "xinlangapi新浪资源(切)",
+      "api": "http://api.xinlangapi.com/xinlangapi.php/provide/vod/"
+    },
+    "wujin1": {
+      "name": "无尽",
+      "api": "https://api.wujinapi.cc/api.php/provide/vod/"
+    },
+    "liangziziyuan4": {
+      "name": "量子资源",
+      "api": "http://cj.lziapi.com/api.php/provide/vod/"
+    },
+    "hongniuziyuan3": {
+      "name": "红牛资源",
+      "api": "https://www.hongniuzy2.com/api.php/provide/vod/"
+    },
+    "shandianziyuan6": {
+      "name": "闪电资源",
+      "api": "http://sdzyapi.com/api.php/provide/vod/"
+    },
+    "guangsuziyuan4": {
+      "name": "光速资源",
+      "api": "https://api.guangsuapi.com/api.php/provide/vod/"
+    },
+    "ukuziyuan5": {
+      "name": "U酷资源",
+      "api": "https://api.ukuapi.com/api.php/provide/vod/"
+    },
+    "shandianziyuan7": {
+      "name": "闪电资源",
+      "api": "http://sdzyapi.com/api.php/provide/vod/"
     }
   }
 }
